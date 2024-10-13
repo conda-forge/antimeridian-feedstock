@@ -18,12 +18,13 @@ build:
 
 requirements:
   host:
-    - python >=3.8
-    - setuptools >=64
+    - python >=3.10
+    - hatchling
     - pip
   run:
-    - python >=3.8
+    - python >=3.10
     - shapely >=2.0
+    - numpy >= 1.22.4
     - click >=8.1,=8.*
 
 test:
@@ -37,7 +38,7 @@ test:
 
 about:
   home: https://github.com/gadomski/antimeridian
-  summary: Fix GeoJSON geometries that cross the antimeridian
+  summary: Fix GeoJSON geometries that cross the 180th meridian
   license: Apache-2.0
   license_file: LICENSE
   doc_url: https://antimeridian.readthedocs.io
