@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=3.10
     - shapely >=2.0
-    - numpy >= 1.22.4
+    - numpy >=1.22.4
     - click >=8.1,=8.*
 
 test:
