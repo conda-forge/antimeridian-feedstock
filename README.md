@@ -7,7 +7,7 @@ Home: https://github.com/gadomski/antimeridian
 
 Package license: Apache-2.0
 
-Summary: Fix GeoJSON geometries that cross the antimeridian
+Summary: Fix GeoJSON geometries that cross the 180th meridian
 
 Development: https://github.com/gadomski/antimeridian
 
