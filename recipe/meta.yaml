@@ -1,5 +1,6 @@
 {% set name = "antimeridian" %}
 {% set version = "0.4.2" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -18,11 +19,11 @@ build:
 
 requirements:
   host:
-    - python 3.10
+    - python {{ python_min }}
     - hatchling
     - pip
   run:
-    - python >= 3.10
+    - python >={{ python_min }}
     - shapely >=2.0
     - numpy >=1.22.4
     - click >=8.1,=8.*
@@ -34,7 +35,7 @@ test:
     - pip check
     - antimeridian --help
   requires:
-    - python 3.10
+    - python {{ python_min }}
     - pip
 
 about:
