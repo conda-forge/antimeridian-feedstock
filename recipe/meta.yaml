@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python 3.10
     - hatchling
     - pip
   run:
-    - python >={{ python_min }}
+    - python >= 3.10
     - shapely >=2.0
     - numpy >=1.22.4
     - click >=8.1,=8.*
@@ -34,7 +34,7 @@ test:
     - pip check
     - antimeridian --help
   requires:
-    - python {{ python_min }}
+    - python 3.10
     - pip
 
 about:
