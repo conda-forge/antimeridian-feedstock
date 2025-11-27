@@ -1,5 +1,5 @@
 {% set name = "antimeridian" %}
-{% set version = "0.4.4" %}
+{% set version = "0.4.5" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/antimeridian-{{ version }}.tar.gz
-  sha256: cb6b9f93e7af6c3f064e0764974fdb62fe1a118926d010eabc4826b9f597ab3b
+  sha256: 088f8daec4109ce5d85d52e9b4382bffcbd1a5b47c78644898f9c6d8562d1207
 
 build:
   entry_points:
